@@ -1,0 +1,68 @@
+<script type="text/javascript">
+    $(".mobile-menu-sub").on('click', function() {
+        $(".mobile-dropdown-sub").slideToggle("fast");
+    });
+
+</script>
+
+<script>
+    // 현재 URL 가져오기
+    var url = window.location.href;
+    // remove # from URL
+    url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+
+    // URL에서 파라미터 제거
+    url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+
+    // 파일 이름 선택
+    url = url.substr(url.lastIndexOf("/") + 1);
+
+    // 파일 이름 안될 때
+    if (url == '') {
+        url = 'index.html';
+    }
+    // 메뉴 아이템 액티브 상태 확인
+    $('.menu-sub li').each(function() {
+        // select href
+        var href = $(this).find('a').attr('href');
+        // Check filename
+        if (url == href) {
+            // 클래스 추가
+            $(this).addClass('active');
+        }
+    });
+</script>
+
+<div class="menu-sub">
+    <div class="menu-sub-dropdown">디자인 이론</div>
+    <ul>
+        <li><a href="design-theory.html">시작</a></li>
+        <li><a href="design-thinking.html">디자인 사고</a></li>
+        <li><a href="preference.html">프로젝트 준비</a></li>
+        <li><a href="layout.html">레이아웃</a></li>
+        <li><a href="pattern.html">패턴</a></li>
+        <li><a href="component.html">컴포넌트</a></li>
+        <li><a href="color.html">색</a></li>
+        <li><a href="typography.html">서체</a></li>
+        <li><a href="icon.html">아이콘</a></li>
+        <li><a href="terms.html">용어</a></li>
+    </ul>
+</div>
+
+<header class="mobile-menu-sub">
+    <div class="mobile-menu-sub-dropdown">
+        디자인 이론
+        <img style="  opacity:1;    float: right;     padding-right: 14px;     width: 12px;     padding-top: 2px;" src="./assets/img/icon/icon-dropdown.svg"></div>
+    <ul class="mobile-dropdown-sub">
+         <li><a href="design-theory.html">시작</a></li>
+        <li><a href="design-thinking.html">디자인 사고</a></li>
+        <li><a href="preference.html">프로젝트 준비</a></li>
+        <li><a href="layout.html">레이아웃</a></li>
+        <li><a href="pattern.html">패턴</a></li>
+        <li><a href="component.html">컴포넌트</a></li>
+        <li><a href="color.html">색</a></li>
+        <li><a href="typography.html">서체</a></li>
+        <li><a href="icon.html">아이콘</a></li>
+        <li><a href="terms.html">용어</a></li>
+    </ul>
+</header>

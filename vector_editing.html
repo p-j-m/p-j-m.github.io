@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50444148-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-50444148-1');
+    </script>
+    <!-- meta preset-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="박종민" />
+    <meta name="description" content="스케치 사용자 매뉴얼 비공식 번역입니다." />
+    <meta name="keywords" content="ux,ui,심볼,스케치,스케치앱,튜토리얼,디자인툴,디자인,gui,ui,ux,매뉴얼,번역,사용자 경험" />
+    <meta property="og:image" content="./assets/img/thumnail/site-thumnail.png" />
+    <meta name="Resource-type" content="Document">
+
+    <title>[번역] 스케치 사용자 매뉴얼 - 벡터 다루기</title>
+
+    <!-- connect with other files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/img/favicon/mstile-310x310.png" />
+</head>
+
+<body>
+    <div class="se-pre-con"> <img class="loader" src="./assets/img/icon/icon-compass.svg"> </div>
+    <div id="nav"></div>
+
+    <div class="article-outer">
+        <div id="submenu-sketch"></div>
+        <div class="article-container">
+
+            <div class="article-title">
+                벡터 다루기
+            </div>
+
+            <div class="article-subtitle">
+                스케치는 벡터 기반 디자인 툴입니다. 포인트와 패스를 이용해 Shape을 만들거나 수정할 수 있습니다. Shape Editing 챕터에서 벡터를 소개하지만 이 챕터에서는 스케치에서 벡터를 다루는 법을 더 자세히 알아볼 것입니다.
+            </div>
+
+            <div class="article-h1">
+                벡터 수정 모드로 전환하기 위해서 Shape 레이어를 더블 클릭(혹은 Enter 키)하거나 Insert > Vector 를 선택해 새 Shape 레이어를 만듭니다.<br><br> 스케치에서 벡터를 다루는 방법에 대해 더 자세히 알기 위한 사례로 Peter Nowell의 <a href="https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb">excellent Mastering the Bézier Curve in Sketch.</a>를 읽어보세요. 기술적이며 이해하기 쉽습니다.
+            </div>
+
+            <div class="article-title">
+                연결
+            </div>
+
+            <div class="article-h1">
+                열린 패스를 2개 이상 선택하고 Layer > Path > Join 을 누르면 하나의 패스로 합쳐집니다. 선택한 것 중 가장 밑에 있는 패스는 고정되고, 위에 있는 패스가 이동합니다.
+            </div>
+
+            <div class="article-title">
+                전환
+            </div>
+
+            <div class="article-h1">
+                패스의 방향은 포인트가 있는 위치에 따라 결정되며 패스가 열려 있다면 시작 지점과 끝 지점이 있는 것을 의미합니다. Layer › Path › Reverse Order를 선택하면 원하는 위치로 새로운 포인트을 찍거나 화살표 방향을 바꾸기 위해 시작과 끝 지점을 바꿀 수 있습니다.</div>
+
+            <div class="article-title">
+                벡터 도구
+            </div>
+
+            <div class="article-subtitle">
+                사전에 준비된 Shape으로 만드는 대신 벡터 도구로 Shape을 직접 그릴 수 있습니다. 툴바에서 Insert › Vector 캔버스의 아무 곳이나 클릭해 첫번째 포인트를 추가합니다. 이 후 다른 곳을 클릭해 두번째 포인트를 추가합니다.
+            </div>
+
+            <div class="article-h1">
+                이제 두 포인트가 연결된 것을 볼 수 있습니다. 세번째 포인트를 클릭-드래그해 곡선을 그립니다. 첫번째 포인트를 다시 클릭하면 패스가 닫힙니다.
+            </div>
+
+            <video controls autoplay loop muted class="article-img" src=" https://www.sketchapp.com/images/documentation/shapes/video/draw@2x.mp4"></video>
+
+            <div class="article-h1">
+                포인트가 픽셀에 배치되어도 Rounding 옵션으로 자세하게 조절할 수 있습니다.
+            </div>
+
+            <div class="article-title">
+                포인트 종류
+            </div>
+            <div class="article-h1">
+                Shape은 포인트로 구성되며 패스가 변하는 다양한 포인트 종류가 있습니다. 포인트를 선택하면 4가지 포인트 종류 직선, 대칭, 비대칭, 분리를 Inspector에서 볼 수 있습니다. 
+            </div>
+            <img class="article-img" src="https://www.sketchapp.com/images/documentation/shapes/modes@2x.jpg">
+
+            
+            <div class="article-title">
+                직선 Straight
+            </div>
+            <div class="article-h1">
+                기본 포인트 종류로 새 포인트를 캔버스에 추가하면 볼 수 있습니다. 직선 패스가 되며 모서리와 같이 각이 있는 것을 그릴 때 유용합니다. 
+                <br><br> 직선 포인트는 곡선을 만들기 위한 핸들 컨트롤 포인트가 없지만 포인트 아래를 클릭-드래그 해 Rounded Corner를 만들 수 있습니다.
+                <br><br> 
+                포인트에 기반한 모서리 둥글기 조절 방식으로 각 모서리마다 다른 값을 적용할 수 있습니다. 예를 들어 상단의 두 꼭지점을 둥글게 만들고 아래 꼭지점을 직각으로 유지할 수 있습니다.
+                <br><br>
+                <img class="article-img" src="https://www.sketchapp.com/images/documentation/shapes/shape-corners.jpg">
+                <br><br>
+                직선 포인트를 더블 클릭하면 대칭형 포인트로 변환되고 다시 더블 클릭하면 원래대로 돌아갑니다.
+            </div>
+
+            
+            <div class="article-title">
+                대칭 Mirrored
+            </div>
+            <div class="article-h1">
+                클릭-드래그해 대칭형 포인트를 만들어 곡선 패스인 Bézier 곡선을 만들 수 있습니다. 포인트의 끝 부분에 핸들 컨트롤 포인트가 2개 생깁니다. 서로 대칭이며 포인트로부터 동일한 간격만큼 떨어져 있습니다.
+                <br><br>
+                핸들 컨트롤 포인트는 패스를 자신의 방향으로 '당기며' 패스가 휘어지는 비율을 조절할 수 있습니다. 대칭형이기 때문에 반대쪽 핸들 컨트롤 포인트도 함께 조절되어 부드러운 곡선이 만들어집니다.
+            </div>
+
+            
+            <div class="article-title">
+                비대칭 Asymmetric
+            </div>
+            <div class="article-h1">
+                이 모드에서 핸들 컨트롤 포인트는 대칭형과 비슷하게 표시됩니다. 이 두 핸들은 같은 각을 공유하지만 포인트로부터의 간격이 동일하지 않습니다. <br><br> 핸들 컨트롤 포인트를 클릭-드래그 조절할 때, Shift 키를 누르면서 거리를 조절하면 벡터 포인트 핸들의 각도에 영향을 끼치지 않고 조절할 수 있습니다. 포인트의 한 쪽면의 곡선을 조절할 때 유용합니다.
+            </div>
+
+            <div class="article-title">
+                분리 Disconnected
+            </div>
+            <div class="article-h1">
+                포인트가 분리되면 핸들 컨트롤 포인트는 서로 완전히 독립적으로 작동합니다. 핸들 컨트롤을 선택한 뒤 Backspace키를 눌러 한 쪽의 핸들을 삭제하면 곡선이던 부분이 직선으로 바뀝니다. <br><br>
+                대칭형,비대칭형 벡터 포인트를 배치할 때 두번 째 포인트를 배치할 때 Command 키를 눌러 포인트를 분리할 수 있으며 해당 포인트에 곡선이 적용되지 않습니다. 이미 배치한 대칭형, 비대칭형 포인트도 클릭-드래그하기 전에 Command 키를 눌러 분리할 수 있습니다.
+            </div>
+
+            
+            <div class="article-title">
+                단축키
+            </div>
+            <div class="article-h1">
+                벡터 도형을 그리거나 수정할 때 키보드 단축키로 종류를 쉽게 바꿀 수 있습니다. 포인트를 선택하고 아래 키를 누르세요.<br><br> 포인트를 선택하면 터치바에서 각 포인트 종류를 조절할 수도 있습니다.<br><br>
+                <img class="article-img" src="https://www.sketchapp.com/images/documentation/shapes/tb-vector@2x.jpg"> 
+                포인트를 추가할 때 Shift 키를 누르면 종류와 상관 없이 이전 포인트에서 45º 위치에 정렬됩니다.
+            </div>
+
+            
+            <div class="article-title">
+                포인트와 패스
+            </div>
+            <div class="article-subtitle">
+                모든 모양은 외곽선을 만드는 패스로 연결된 벡터 포인트로 만들어집니다. 벡터 다듬기로 새로운 모양을 만들거나 벡터 레이어를 수정하거나 다듬을 수 있습니다.
+            </div>
+
+            
+            <div class="article-title">
+                포인트 선택
+            </div>
+            <div class="article-h1">
+                레이어처럼 여러 포인트를 선택할 수 있습니다. 포인트를 선택할 때 Shift 키를 누르면 됩니다. 선택된 포인트는 다른 것보다 크고 어둡게 표시될 것입니다. 선택한 포인트를 Shift-클릭하면 선택이 해제됩니다. 포인트 종류에 따라 핸들 컨트롤 포인트를 선택할 수 있습니다.<br><br>
+                닫힌 모양의 외부에서부터 네모 모양으로 클릭-드래그해 여러 포인트를 선택할 수 있습니다.<br><br>
+                클릭-드래그해 선택할 때 Shift 키를 누르면 선택이 반대로 적용됩니다. 이미 선택한 포인트는 선택이 해제되는 것을 의미합니다. 클릭-드래그 하기 전에 Shift 키를 누르면 현재 선택에 추가로 선택됩니다.
+                <br><br>
+                
+                만약 패스가 열려있다면 캔버스의 아무 영역이나 클릭하면 선택이 되는 대신 새로운 포인트가 추가되기 때문에
+                Inspector에 있는 Rounding 옵션 옆에 있는 선택 도구를 선택해야합니다.(혹은 X 키)
+                <br><br>
+                
+                여러 벡터 모양을 한번에 수정할 수 있는 것을 기억하세요. 서브패스가 있는 아무 레이어를 선택하거나 여러 벡터 모양을 선택하고 엔터키를 눌러 편집을 시작합니다. 일일이 선택할 필요없이 한번에 편집할 수 있는 모든 모양의 벡터 포인트가 보일 것입니다.
+            </div>
+
+            <video controls loop muted class="article-img" src=" https://www.sketchapp.com/images/documentation/shapes/video/shape-edit-multiple@2x.mp4"></video>
+
+            <div class="article-h1">
+                Command A 단축키를 누르면 모양 안의 모든 포인트가 선택됩니다. Tab 키를 누르면 포인트가 배치된 순서대로 선택이 전환될 것입니다.
+            </div>
+
+            <div class="article-title">
+                포인트 이동
+            </div>
+            <div class="article-h1">
+                선택된 포인트를 이동해 모양을 수정할 수 있습니다. 선택된 포인트의 수정할 수 있는 X,Y 값이 Inspector에 표시됩니다.<br><br>
+                포인트를 이리저리 드래그하면 모양의 중앙이나 다른 포인트에 정렬할 수 있는 스마트 가이드를 볼 수 있습니다. Shift 키를 누르면 움직이려는 방향의 축을 고정해 포인트가 수직 수평으로 이동합니다. 이는 핸들 컨트롤 포인트도 마찬가지입니다.<br><br>Option 키를 누르면 선택이나 이동 여부와 상관없이 모든 핸들 컨트롤 포인트가 표시됩니다.
+            </div>
+
+            <div class="article-title">
+                포인트 정렬
+            </div>
+            <div class="article-h1">
+                여러 포인트를 선택하여 Inspector 상단의 분배와 정렬 도구를 사용할 수 있습니다. 3 개 이상의 포인트를 동일한 간격으로 분배하거나, 2개 이상의 포인트를 정렬할 수 있습니다.
+            </div>
+
+            <div class="article-title">
+                포인트 둥글게하기
+            </div>
+
+            <div class="article-h1">
+                새로운 포인트를 추가하거나 움직일 때 포인트는 정확한 위치에 물립니다.그렇기 때문에 Inspector의 포인트 종류 선택 아래에 Rounding 옵션이 있습니다. 픽셀 전체, 픽셀 반, 둥글리지 않음을 선택할 수 있습니다.<br><br>
+                벡터 포인트를 조정할 때 극도의 세밀함이 요구될 때가 있습니다. 포인트를 조정하기 위해 화면을 확대할 때 Pixel Grid (View › Canvas › Show Pixel Grid on Zoom)를 활성화해 포인트가 어디에 물리는지 확인할 수 있습니다.<br><br>
+                확대 후 새 포인트를 추가할 때 픽셀 전체 혹은 반에 픽셀이 물리는 것을 미리 확인하고 나중에 자세히 수정할 걱정이 없어집니다.
+            </div>
+
+            <div class="article-title">
+                패스 수정
+            </div>
+
+            <div class="article-h1">
+                포인트를 선택할 수 있을 때 패스를 선택할 수 없습니다. (패스를 편집할 수 없는 것은 아닙니다.)
+                <br><br> 두 포인트의 사이의 패스에 마우스를 올리면 커서를 따라다니는 파란색 포인트가 표시됩니다.
+                클릭하면 새 포인트를 추가합니다: 직선 패스의 경우 직선으로, 곡선 패스의 경우 비대칭 곡선으로 추가됩니다.
+                클릭하고 드래그하여 새 포인트을 만들면 패스가 비대칭 포인트로 커브가 나타납니다.<br><br>
+                Shift 키를 누른 상태에서 두 포인트 사이의 패스를 클릭하면 스케치가 새 포인트를 가운데에 추가합니다.<br><br>
+                포인트를 추가하지 않고 패스를 직접 조절할 수 있습니다. Command 키를 누고 커서를 가져 가면 "bend segment" 커서가 나타납니다. Command 키를 누르면서 클릭-드래그해 구부리기를 시작합니다. 이렇게 하면 패스의 곡선에 영향을 주는 포인트의 핸들 컨트롤 포인트가 변경됩니다.<br><br>
+                벡터 편집기의 일부는 아니지만 가위 도구를 사용하여 패스를 열고 두 벡터 포인트 사이를 자를 수 있습니다.<br><br>  
+            </div>
+
+            <div class="article-title">
+                닫힘 vs 열림
+            </div>
+
+            <div class="article-h1">
+                패스를 닫거나 열 수 있습니다. 패스가 닫히면 포인트 사이의 모든 패스가 연결됩니다. 열려 있으면 마지막 포인트와 첫 번째 포인트 사이에 간격이 생깁니다. 메뉴에서 Layer › Path › Close Path 또는 Option-Command-O를 선택하여 닫힌 패스를 열린 패스로 바꿀 수 있습니다.
+                <br><br>
+                Finishi Editing을 클릭하거나 Enter 키를 누릅니다. 편집 모드를 종료하고 패스를 열어 두면 다음 번 편집  때 마지막으로 끝낸 포인트에서 다음 포인트를 배치 할 수 있습니다. <br><br>
+                
+                환경 설정에 따라 열려있는 패스의 포인트를 선택해 편집하거나 반대쪽 끝의 포인트를 선택해 패스를 닫을 수 있습니다. Preferences › Layers를 선택하고 "Close path when clicking to select the opposite end point"를 선택하여 설정할 수 있습니다.<br><br>
+                
+                노트: Shape에 색을 채워넣으면 선이 연결되어 있지 않아도 패스가 닫힌 것처럼 속이 채워집니다.
+
+                <img class="article-img" src="https://www.sketchapp.com/images/documentation/shapes/open.jpg">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#submenu-sketch").load("submenu-sketch.html");
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/jquery.lazyload.js?v=1.9.1"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+</body>
+</html>

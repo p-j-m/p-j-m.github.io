@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50444148-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-50444148-1');
+
+    </script>
+    <!-- meta preset-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="박종민" />
+    <meta name="description" content="디자인에 대하여" />
+    <meta name="keywords" content="portfolio,designer,interactive,visual 디자인,색,앱디자인,서비스,원리,디자인 요소" />
+    <meta property="og:image" content="./assets/img/thumnail/site-thumnail.png" />
+    <meta name="Resource-type" content="Document">
+
+    <title>디자인 시스템 - 그리드</title>
+
+    <!-- connect with other files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/img/favicon/mstile-310x310.png" />
+</head>
+
+<body>
+    <div class="se-pre-con"> <img class="loader" src="./assets/img/icon/icon-compass.svg"> </div>
+    <div id="nav"></div>
+    <div class="article-outer">
+        <div id="submenu-theory"></div>
+        <div class="article-container">
+            <h3>
+                레이아웃</h3>
+            <p>
+                스케치로 효율적으로 디자인을 만들기 위한 레이아웃 시스템입니다.
+            </p>
+
+            <h3>
+                그리드</h3>
+            <p>
+                최소한의 단위를 표현한 격자 안내선입니다. 1픽셀 단위로 디자인할 경우 효율이 떨어지기 때문에 스크린의 전체 픽셀을 기준으로 최소 단위를 정합니다. 보편적으로 쓰이는 스크린 픽셀이 8로 나눠지기 때문에 8pt 그리드를 널리 사용합니다. 다만 8로 나눠지지 않는 스크린을 디자인할 경우 따로 그리드를 설정해주기도 합니다.
+            </p>
+            <img class="article-img" data-original="./assets/img/design-system/layout/Layout_Grid.png">
+
+            <h3>
+                레이아웃</h3>
+            <p>
+                반복해서 적용되는 레이아웃 패턴을 위한 안내선입니다. 나눌 단의 개수, 기본 픽셀 그리드와의 적합성 등을 고려해서 4단, 6단, 12단을 사용합니다. Header, Footer, Contents, Nav와 같이 전체적인 구조를 짜거나 반응형 디자인을 할 때 도움이 되는 안내선입니다.
+            </p>
+            <img class="article-img" data-original="./assets/img/design-system/layout/Layout_Layout.png">
+
+            <h3>
+                설정</h3>
+            <p>
+                스케치 오른쪽 상단의 View에서 Grid와 Layout을 설정할 수 있습니다. Grid block size 에 기본 단위를 설정해 그리드를 설정합니다. 양쪽 마진을 고려해 Total width를 지정하고(Device Width - (Left Margin + Right Margin)=Total width), Number of Columns와 Gutter Width를 이용해 레이아웃을 설정합니다.
+            </p>
+            <img class="article-img" data-original="./assets/img/design-system/layout/Layout_Setting.png">
+
+            <h3>
+                첨부 파일</h3>
+
+            <div class="btn" onclick="location.href='https://github.com/p-j-m/design-compass/blob/master/assets/files/DC-Layout.sketch';">
+                Github: DC-Layout.sketch
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#submenu-theory").load("submenu-system.html");
+
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/jquery.lazyload.js?v=1.9.1"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+
+    </script>
+</body>
+
+</html>

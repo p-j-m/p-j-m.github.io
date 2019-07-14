@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50444148-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-50444148-1');
+    </script>
+    <!-- meta preset-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="박종민" />
+    <meta name="description" content="디자인에 대하여" />
+    <meta name="keywords" content="portfolio,designer,interactive,visual 디자인,색,앱디자인,서비스,원리,디자인 요소" />
+    <meta property="og:image" content="./assets/img/thumnail/site-thumnail.png" />
+    <meta name="Resource-type" content="Document">
+
+    <title>디자인 이론 - 레이아웃</title>
+
+    <!-- connect with other files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/img/favicon/mstile-310x310.png" />
+</head>
+
+<body>
+    <div class="se-pre-con">
+        <img class="loader" src="./assets/img/icon/icon-compass.svg"> </div>
+    <div id="nav"></div>
+    <div class="article-outer">
+        <div id="submenu-theory"></div>
+        <div class="article-container">
+            <h3>
+                레이아웃</h3>
+            <p>
+                레이아웃은 특정 영역 안에 요소를 배치하는 것입니다. 스크린에서 사용하는 레이아웃은 정적인 화면의 균형 뿐만 아니라 서비스의 추상적인 공간의 구조를 적절하게 표현해야합니다. 또한 다양한 스크린에서 표시되기 때문에어떤 환경에서도 유사한 맥락으로 사용할 수 있도록 설계해야 합니다.
+            </p>
+
+            <h3>
+                단위</h3>
+            <p>
+                화면을 배치할 때 1px로 조정할 경우 레이아웃을 관리하기 어렵기 때문에 최소한의 단위가 필요합니다. 먼저 1.5x 2x 등 다양한 배수로 사용하기 때문에 곱하거나 나눠도 정수가 되는 짝수 단위를 사용합니다. 그 중에서도 주요 디스플레이의 전체 픽셀을 정수로 나눌 수 있는 8 포인트 그리드 시스템이 널리 쓰이고 있습니다. iOS의 375, 750 스크린과 같이 8로 나뉘지 않는 경우도 있기 때문에 단위를 엄격하게 적용하지는 않습니다.
+            </p>
+            <div class="sidebar-outlink" onclick="location.href='https://brunch.co.kr/@blackindigo-red/8';">
+                <img class="sidebar-icon" data-original="./assets/img/icon/icon-outlink.svg">8-Point 그리드 시스템 by 정윤선
+            </div>
+            <img class="article-img" data-original="./assets/img/design-system/unit@2x.png">
+
+            <h3>
+                PX PT DP</h3>
+            <p>
+                스크린은 픽셀로 구성됩니다. 픽셀을 기준으로 디자인하면 디바이스의 픽셀 밀도(PPI = 1inch 공간 안에 표시되는 픽셀 수)로 인해 의도한 것과 다르게 작거나 크게 표시될 수 있습니다. iOS/Android에서는 어떤 화면에서도 같은 크기로 보이도록 pt와 dp 단위를 사용합니다. 그래픽 디자인 툴은 보통 1px = 1pt로 설정되어 따로 설정을 변경할 필요는 없습니다.
+            </p>
+            <div class="sidebar-outlink" onclick="location.href='https://brunch.co.kr/@blackindigo-red/18#_=_';">
+                <img class="sidebar-icon" data-original="./assets/img/icon/icon-outlink.svg">픽셀 밀도에 대한 설명 - 정윤선
+            </div>
+            <div class="sidebar-outlink" onclick="location.href=' https://brunch.co.kr/@eeasily/17';">
+                <img class="sidebar-icon" data-original="./assets/img/icon/icon-outlink.svg">모바일 기본 단위 DP,PT - Henry Lee
+            </div>
+            <img class="article-img" data-original="./assets/img/design-system/pixel_density@2x.png">
+
+            <h3>
+                스크린</h3>
+            <p>
+                서비스가 지원할 디바이스 중 가장 작은 스크린을 기준으로 PT,DP 단위로 작업하며 디바이스의 밀도(Density)만큼 곱해져 실제 디바이스에 표시됩니다. 작은 화면을 기준으로 디자인된 파일에서 사용한 에셋이 실제 디바이스에서는 큰 픽셀로 표시되기 때문에 각 밀도에 맞도록 에셋을 크게 만듭니다. 주로 iOS는 x1 x2 x3 으로 에셋을 내보내며 안드로이드는 x1 x1.5 x2 x3 x4로 내보냅니다.
+            </p>
+            <table>
+                <tr>
+                    <th>Device</th>
+                    <th>PT=DP</th>
+                    <th>Density</th>
+                    <th>PX</th>
+                </tr>
+                <tr>
+                    <td>Standard Mobile</td>
+                    <td>360x640</td>
+                    <td>1.0</td>
+                    <td>360x640</td>
+                </tr>
+                <tr>
+                    <td>Standard Tablet 9</td>
+                    <td>768x1024</td>
+                    <td>1.0</td>
+                    <td>768x1024</td>
+                </tr>
+                <tr>
+                    <td>Standard Desktop</td>
+                    <td>1280x850</td>
+                    <td>1.0</td>
+                    <td>1280x850</td>
+                </tr>
+            </table>
+
+            <h5>Android</h5>
+            <table>
+                <tr>
+                    <th>Device</th>
+                    <th>PT=DP</th>
+                    <th>Density</th>
+                    <th>PX</th>
+                </tr>
+                <tr>
+                    <td>Google Pixel 2</td>
+                    <td>411x731</td>
+                    <td>2.6</td>
+                    <td>1080x1920</td>
+                </tr>
+                <tr>
+                    <td>Google Pixel 2 XL</td>
+                    <td>411x822</td>
+                    <td>3.5</td>
+                    <td>1440x2880</td>
+                </tr>
+                <tr>
+                    <td>Galaxy S6</td>
+                    <td>360x640</td>
+                    <td>4.0</td>
+                    <td>1440x2560</td>
+                </tr>
+                <tr>
+                    <td>Galaxy S8</td>
+                    <td>360x740</td>
+                    <td>4.0</td>
+                    <td>1440x2960</td>
+                </tr>
+                <tr>
+                    <td>Galaxy S8+</td>
+                    <td>360x740</td>
+                    <td>4.0</td>
+                    <td>1440x2960</td>
+                </tr>
+                <tr>
+                    <td>Galaxy Note 8</td>
+                    <td>360x740</td>
+                    <td>4.0</td>
+                    <td>1440x2960</td>
+                </tr>
+            </table>
+
+            <h5>iOS</h5>
+            <table>
+                <tr>
+                    <th>Device</th>
+                    <th>PT=DP</th>
+                    <th>Density</th>
+                    <th>PX</th>
+                </tr>
+                <tr>
+                    <td>iPhone SE</td>
+                    <td>320x568</td>
+                    <td>2.0</td>
+                    <td>640x1136</td>
+                </tr>
+                <tr>
+                    <td>iPhone 8</td>
+                    <td>375x667</td>
+                    <td>2.0</td>
+                    <td>1125x1334</td>
+                </tr>
+                <tr>
+                    <td>iPhone X</td>
+                    <td>375x812</td>
+                    <td>3.0</td>
+                    <td>1125x1624</td>
+                </tr>
+                <tr>
+                    <td>iPad Air 2</td>
+                    <td>768x1024</td>
+                    <td>2.0</td>
+                    <td>1536x2048</td>
+                </tr>
+                <tr>
+                    <td>iPad Pro 10.5</td>
+                    <td>834x1112</td>
+                    <td>2.0</td>
+                    <td>1668x2224</td>
+                </tr>
+                <tr>
+                    <td>iPad Pro 12.9</td>
+                    <td>1366x1024</td>
+                    <td>2.0</td>
+                    <td>2732x2048</td>
+                </tr>
+                <tr>
+                    <td>Macbook Pro 13</td>
+                    <td>1280x800</td>
+                    <td>2.0</td>
+                    <td>2560x1600</td>
+                </tr>
+                <tr>
+                    <td>Macbook Pro 15</td>
+                    <td>1440x900</td>
+                    <td>2.0</td>
+                    <td>2880x1800</td>
+                </tr>
+                <tr>
+                    <td>iMac</td>
+                    <td>2560x1440</td>
+                    <td>1.0</td>
+                    <td>2880x1440</td>
+                </tr>
+                <tr>
+                    <td>iMac 5k</td>
+                    <td>2560x1440</td>
+                    <td>2.0</td>
+                    <td>5120x2880</td>
+                </tr>
+            </table>
+
+            <h3>
+                구조</h3>
+            <p>
+                공간을 스케치하기 위해 간단한 블록 그리드로 전체 구조를 짜며 보통 Header, Nav, Contents, Footer, Overlay로 구성됩니다. 플랫폼에 따라 명칭이 다를 수 있지만 용도와 패턴이 비슷하기 때문에 일관된 시스템 관리를 위해 큰 구조를 통일 시키는 편이 좋습니다.
+            </p>
+            <img class="article-img" data-original="./assets/img/design-theory/structure.png">
+
+
+            <h3>
+                반응형 레이아웃</h3>
+            <p>
+                모든 스크린에 맞춰 디자인/개발을 따로 할 수 없기 때문에 스크린 크기에 따라 자동으로 레이아웃이 변하는 반응형 레이아웃을 사용합니다. 특정 픽셀 이상/이하 일 경우를 지정해 레이아웃이 표시되는 방식을 정하는 것으로 화면의 크기와 비율이 다양한 웹에서 주로 사용합니다.
+            </p>
+            
+            <img class="article-img" data-original="./assets/img/design-theory/responsive.png">
+            
+            <h3>
+                브레이크 포인트</h3>
+            <p>
+                레이아웃이 달라지는 기준이 되는 가로 픽셀을 지칭합니다. 보통 데스크탑/타블렛/모바일 과 Portrait/Landscape로 나눕니다.
+            </p>
+
+            <table>
+                <tr>
+                    <th>Breakpoint</th>
+                    <th>Device</th>
+                    <th>Columns</th>
+                    <th>Gutter(pt/dp)</th>
+                </tr>
+                <tr>
+                    <td>375</td>
+                    <td>Mobile</td>
+                    <td>4</td>
+                    <td>8,16</td>
+                </tr>
+                <tr>
+                    <td>768,1024</td>
+                    <td>Tablet</td>
+                    <td>8</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>1440,1600,1920</td>
+                    <td>Laptop,Desktop</td>
+                    <td>12</td>
+                    <td>24</td>
+                </tr>
+            </table>
+            
+            
+            <h3>
+                그리드</h3>
+            <p>
+                효율적인 레이아웃 구성을 위한 규칙입니다. 하나의 열에 2,3,4,6 등 다양한 방식으로 레이아웃을 구성할 수 있는 12-column 그리드를 사용하는 편입니다. Column은 단을 뜻하며 Gutter는 그 사이의 간격을 뜻합니다.
+            </p>
+            
+             <img class="article-img" data-original="./assets/img/design-theory/grid.png">
+
+
+            
+        </div>
+
+    </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#submenu-theory").load("submenu-theory.html");
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./js/jquery.lazyload.js?v=1.9.1"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+    </script>
+</body>
+
+</html>
