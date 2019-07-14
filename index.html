@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<header>
+<head>
   <meta http-equiv="refresh" content="5;url=http://p-j-m.github.io/design-compass" />
 
 출처: https://studio2b.tistory.com/32 [studio2b]
@@ -10,44 +12,74 @@
     enable_page_level_ads: true
   });
 </script>
-  </header>
-  <body>
-## Welcome to GitHub Pages
+  </head>
+ 
+<body style="overflow : hidden;background-color:black;">
+    <div class="se-pre-con">
+        <img class="loader" src="./assets/img/icon/icon-compass.svg">
+    </div>
 
-You can use the [editor on GitHub](https://github.com/p-j-m/p-j-m.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+    <div class="layer-vertical-align">
+        <div class="animate" data-animate="zoomIn" data-duration="4.0s" data-delay="1s">
+            <img style="cursor:pointer;top:50%;width:100%;" src="./assets/img/thumnail/Main.svg" onclick="location.href='./design-theory.html';">
+        </div>
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div style="position:absolute;bottom:0;width:100%;color:white;">
+        <div class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="3s">
+            <div style="padding:24px;font-size:20px;" onclick="location.href='./design-theory.html';">
+                디자인 이론</div>
+        </div>
+    </div>
+    <!--로고-->
+    <div class="animate" data-animate="fadeInDown" data-duration="2.0s" data-delay="3s">
 
-### Markdown
+        <div class="nav" style="background-color:transparent;">
+            <button class="burger-white">
+            <span></span>
+            </button>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            <div class="sidemenu">
+                <ul class="main_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./design-theory.html">디자인 이론</a></li>
+                    <li><a href="./design-system.html">디자인 시스템</a></li>
+                    <li><a href="./sketch-tutorial.html">스케치 매뉴얼</a></li>
+                    <li><a href="./archive.html">아카이브</a></li>
+                </ul>
+                <div class="sidemenu_footer">
+                    <h3>
+                        <a style="    float: left;text-decoration:none; display: block; z-index: 1;" href="https://www.behance.net/sb000796">
+                <object style="z-index: -1;left:0px; pointer-events:none; width:24px;height:24px;padding-right:10px;" type="image/svg+xml" data="./assets/Icon/Solid/Social-Behance.svg"></object>
+                </a>
 
-```markdown
-Syntax highlighted code block
+                        <a style="    float: left;text-decoration:none; display: block; z-index: 1;" href="https://dribbble.com/blackschorl">
+            <object style="z-index: -1;left:0px; pointer-events:none; width:24px;height:24px;padding-right:10px;" type="image/svg+xml" data="./assets/Icon/Solid/Social-Dribbble.svg"></object>
+                    
+                </a>
+                        <a href="https://brunch.co.kr/@blckschrl" style="    float: left;text-decoration:none; display: block; z-index: 1;">
+             <object style="z-index: -1;left:0px; pointer-events:none; width:24px;height:24px;padding-right:10px;" type="image/svg+xml" data="./assets/Icon/Solid/Social-Brunch.svg"></object>
+                </a>
+                    </h3>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="./index.html" style="text-decoration:none; display: block; z-index: 1;width: 32px;
+margin: 0 auto;">
+                <object style="z-index: -1;pointer-events:none; margin:20px 0px 20px 0px; width:32px;height:auto;" type="image/svg+xml" data="./assets/img/logo/logo-designcompass.svg"></object>
+                </a>
+            </div>
+        </div>
+    </div>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/p-j-m/p-j-m.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
+    <!-- 메뉴 및 로딩 -->
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="dist/scrolla.jquery.min.js"></script>
+    <script>
+        $("#nav").load("nav.html");
+        $("#submenu-theory").load("submenu-theory.html");
+    </script>
 </body>
+
+</html>
