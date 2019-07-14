@@ -66,37 +66,151 @@
             text-decoration: none;
         }
 
+        .main_container {
+            padding: 80px 0px;
+            width: 900px;
+            margin: 0 auto;
+            color: white;
+            text-align: left;
+        }
+
+
+        .title {
+            font-family: NotoSansCJKkr-Bold;
+            font-size: 40px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+
+
+        }
+
+        .subtitle {
+            padding: 24px 0px;
+            opacity: 0.4;
+            font-family: NotoSansCJKkr-Medium;
+            font-size: 30px;
+            color: #FFFFFF;
+            letter-spacing: -0.2px;
+            line-height: 46px;
+
+        }
+
+        .links {
+            float: left;
+            cursor: pointer;
+            padding: 30px;
+            margin: 10px 10px 0px 0px;
+            background: rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.30);
+            border-radius: 12px;
+            width: 370px;
+        }
+
+        .links:hover {
+            background: rgba(0, 0, 0, 0.3);
+            transition: 0.2s;
+        }
+
+        .emoji {
+            font-size: 50px;
+        }
+
+        .btn_title {
+            font-family: NotoSansCJKkr-Medium;
+            font-size: 22px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+        }
+
+        .btn_subtitle {
+
+            opacity: 0.4;
+
+            font-family: NotoSansCJKkr-Medium;
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+        }
+
+        @media screen and (max-width: 900px) {
+ .title {
+          
+            font-size: 28px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+padding:0px 8px;
+
+        }
+
+        .subtitle {
+            padding: 16px 8px;
+            opacity: 0.4;
+            font-family: NotoSansCJKkr-Medium;
+            font-size: 24px;
+            color: #FFFFFF;
+            letter-spacing: -0.2px;
+            line-height: 36px;
+
+        }
+            .main_container {
+                width: 100%;
+            }
+            .links_container {
+                width: 100%;
+            }
+            .links {
+                float: none;
+                width: 80%;
+                margin: 8px auto;
+            }
+
+
+        }
+
     </style>
 </head>
 
-<body style="overflow : hidden;background-color:black;">
+<body style="background-color:#2F3032;text-align:center;">
     <div class="se-pre-con">
         <img class="loader" src="./assets/img/icon/icon-compass.svg">
     </div>
 
-    <div class="layer-vertical-align">
-        <div class="animate" data-animate="zoomIn" data-duration="4.0s" data-delay="1s">
-            <img style="cursor:pointer;margin-top:-100px;width:85%;max-width:840px;" src="./assets/img/thumnail/Main.svg" onclick="location.href='./design-theory.html';">
+
+    <div class="main_container">
+        <div class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="1s" style="margin:8px;">
+            <div class="title">
+                디자인 나침반</div>
+
+            <div class="subtitle">
+                디자인은 어느 맥락에 속해 있는지에 따라 다양하게 해석됩니다. 산업의 변화에 따라 디자인은 UX 디자인, 제품 디자인, 그래픽 디자인 등 여러 갈래로 분화되었고, 그 중 UX 디자인은 다양한 디지털 서비스의 성장에 발맞춰 독특한 방식으로 연구가 진행되었습니다. 이 공간에서는 디지털 프로덕트를 만드는데 필요한 디자인에 대한 이야기를 담았습니다.</div>
+
+            <div class="links_container">
+                <div class="links" onclick="location.href='./design-theory.html';">
+                    <div class="emoji">👁️</div>
+                    <div class="btn_title">디자인 이론</div>
+                    <div class="btn_subtitle">UX. GUI. VCD</div>
+                </div>
+                <div class="links" onclick="location.href='./design-system.html';">
+                    <div class="emoji">📱</div>
+                    <div class="btn_title">디자인 시스템</div>
+                    <div class="btn_subtitle">Abstract. Sketch. Zeplin</div>
+                </div>
+                <div class="links" onclick="location.href='./sketch-tutorial.html';">
+                    <div class="emoji">📖</div>
+                    <div class="btn_title">매뉴얼</div>
+                    <div class="btn_subtitle">Design Tool Manual</div>
+                </div>
+                <div class="links" onclick="location.href='./archive.html';">
+                    <div class="emoji">🗄️</div>
+                    <div class="btn_title">아카이브</div>
+                    <div class="btn_subtitle">Websites. Movies . Books</div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div style="position:absolute;bottom:0;width:100%;color:white;text-align:center;">
-        <div class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="3s" style="margin:8px;">
-            <div style="padding:8px;font-size:24px;font-weight:bold;">
-                디자인 이론</div>
-
-            <div style="margin:0 auto;max-width:380px;padding:8px;font-size:16px;line-height:24px;">
-                디지털 프로덕트가 어떻게 만들어지는 이해하기 위해 다양한 이론을 모아 정리한 글 묶음입니다.</div>
-
-            <div style="padding:24px;font-size:16px;
-  ">
-                <a style="text-decoration:none;color:white;padding: 10px 20px;
-  border: solid #fff 1px;border-radius: 32px;" href="./design-theory.html">읽어보기</a></div>
-
-        </div>
-    </div>
     <!--로고-->
-    <div class="animate" data-animate="fadeInDown" data-duration="2.0s" data-delay="3s">
+    <div class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="2s">
 
         <div class="nav" style="background-color:transparent;">
             <button class="burger-white">
